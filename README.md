@@ -1,10 +1,20 @@
 # Agenticide Releases
 
-Pre-built binaries for [Agenticide](https://github.com/ivikasavnish/agenticide-go) - AI-powered development assistant.
+**The Best Agentic Layer for Developers** - Simple, powerful, extensible.
 
-## Download
+Pre-built binaries for [Agenticide](https://github.com/ivikasavnish/agenticide-go) - AI-powered development assistant with extension marketplace.
 
-### Latest Release
+**Latest Version:** v0.4.0
+
+## Quick Install
+
+### Homebrew (macOS/Linux)
+```bash
+brew tap ivikasavnish/agenticide
+brew install agenticide
+```
+
+### Direct Download
 
 **macOS (Apple Silicon)**
 ```bash
@@ -56,27 +66,47 @@ You'll be prompted for:
 3. Receive license key via email
 4. Activate with: `agenticide activate <license-key>`
 
-## Features
-
-### Extension System
-- **Security Agent** - SAST scanning, secret detection, vulnerability checks
-- **Code Analyzer** - Complexity metrics, dead code detection
-- **Project Runner** - Auto-detect and run any project type
-- **Web Search** - Multi-engine search with content extraction
-- **Task Management** - Dependency-aware task tracking
-- **Interactive Chat** - AI-powered assistance with ultraloop/ultrathink modes
-
-### Launch Modes
+## Quick Start
 
 ```bash
-# CLI mode (default)
-agenticide chat
+# Just run it - chat is default
+agenticide
 
-# Full window mode (TUI)
-agenticide --mode=window
+# Search marketplace
+agenticide search
 
-# Micro window (floating overlay)
-agenticide --mode=micro
+# Install an extension
+agenticide install security
+```
+
+## Features
+
+### 🎯 Default Chat
+Just type `agenticide` - no commands needed!
+
+### 📦 Extension Marketplace (like npx)
+```bash
+agenticide search [query]     # Search 12+ extensions
+agenticide install <name>     # Install extension
+agenticide list               # List installed
+agenticide info <name>        # Extension details
+```
+
+**Available Extensions:**
+- **Security**: security, test-generator
+- **Development**: code-analyzer, project-runner, git-ops, ai-recipes
+- **Operations**: deployment, monitoring, cost-controller
+- **Data**: db-analytics, web-search
+- **Design**: ui-design
+
+### 🚀 Launch Modes
+
+```bash
+agenticide              # CLI mode (default chat)
+agenticide window       # Full-screen TUI
+agenticide micro        # Floating overlay
+agenticide server start # Background daemon
+agenticide web          # Browser interface
 
 # Server mode (background daemon)
 agenticide server start

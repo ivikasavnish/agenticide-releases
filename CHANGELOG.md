@@ -2,6 +2,118 @@
 
 All notable changes to Agenticide will be documented in this file.
 
+## [0.5.0] - 2026-02-22
+
+### 🎉 Phase 4 Complete - Production Ready
+
+**Full CLI Testing**
+- Comprehensive testing of all commands
+- Extension contract validation
+- Error handling verification
+
+**Documentation**
+- Homebrew installation guide
+- Extension contract documentation
+- Phase completion summaries
+
+### Changed
+- Removed unused imports for cleaner codebase
+- Finalized Phase 4 implementation
+- Production-ready release
+
+### Repository
+- Source: https://github.com/ivikasavnish/agenticide-go
+- Releases: https://github.com/ivikasavnish/agenticide-releases
+
+---
+
+## [0.4.0] - 2026-02-21
+
+### 🎉 Major Features
+
+**Extension Marketplace**
+- npx-style extension discovery and installation
+- 12 extensions in catalog (security, code-analyzer, web-search, etc.)
+- Remote installation from GitHub/registry
+- Tag-based search and category filtering
+- Version management and progress indicators
+
+**Default Chat**
+- Just run `agenticide` (no args needed)
+- Streamlined UX - chat is the primary interface
+
+**Signup & Licensing**
+- User registration with email, mobile, LinkedIn validation
+- License key generation (AGNT-XXXX-XXXX format)
+- Approval workflow with local storage
+
+**Multiple Launch Modes**
+- CLI mode (default)
+- Window mode (full-screen TUI)
+- Micro mode (floating overlay)
+- Server mode (background daemon)
+- Web mode (browser interface)
+
+### Added
+- `agenticide search [query]` - Search extension marketplace
+- `agenticide install <ext>` - Install extension
+- `agenticide list` - List installed extensions
+- `agenticide info <ext>` - Extension details
+- `agenticide uninstall <ext>` - Remove extension
+- `agenticide signup` - User registration
+- `agenticide activate <key>` - License activation
+- `agenticide window/micro/web/server` - Launch modes
+- Extension contract documentation (docs/EXTENSION_CONTRACT.md)
+- Marketplace documentation (MARKETPLACE.md)
+
+### Changed
+- Default command is now chat (just run `agenticide`)
+- Improved CLI structure with marketplace commands
+- Enhanced README with marketplace features
+
+### Repository
+- Source: https://github.com/ivikasavnish/agenticide-go
+- Releases: https://github.com/ivikasavnish/agenticide-releases
+
+---
+
+## [0.3.0] - 2026-02-14
+
+### Added
+- CLI commands: ext, task, chat, plan
+- Extension management (list/enable/disable/info)
+- Task management with dependency tracking
+- Interactive chat with --ultraloop and --ultrathink
+- Plan mode for task decomposition
+
+### Changed
+- Integrated all commands into main CLI
+- Added beautiful terminal UI with Lipgloss
+
+---
+
+## [0.2.0] - 2026-02-12
+
+### Added
+- Terminal UI with 6 Lipgloss components
+- Tables, progress bars, lists, panels, charts, badges
+- Status icons (✓ ◐ ○ ⚠)
+- Color themes and styles
+
+---
+
+## [0.1.0] - 2026-02-11
+
+### Added
+- Core extension system
+- Context management
+- SQLite storage with migrations
+- Viper configuration
+- Zap structured logging
+- Event bus for inter-extension communication
+
+---
+
 ## [v0.3.0] - 2026-02-21
 
 ### Added
